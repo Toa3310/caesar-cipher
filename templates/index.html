@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Caesar Cipher</title>
+</head>
+<body>
+    <h1>シーザー暗号ツール(暗号・復号両対応)</h1>
+
+    <form method="POST">
+        <input type="text" name="text" placeholder="暗号文または復号文を入力"><br>
+        <input type="number" name="shift" placeholder="シフト数を入力(例 : 2)"><br>
+
+        <select name="mode">
+            <option value="1">暗号化</option>
+            <option value="2">復号</option>
+        </select><br>
+
+        <button type="submit">結果</button>
+    </form>
+
+    <p>Result: {{ result }}</p>
+</body>
+</html>
